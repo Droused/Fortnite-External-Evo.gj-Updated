@@ -10,7 +10,7 @@ void Esp::ActorLoop() {
     			if (read<__int32>(BaseId+ (i * 0x1000) + 0x250) == 0x260E020B) 
 		{ va_text = BaseId + ((i + 1) * 0x1000); }
 
-		__int64 uworldp = 0x117145c8+ va_text;
+		__int64 uworldp = 0x117105C8 + va_text;
 
 		LocalPtrs::Gworld = read<uint64_t>(uworldp);
 		 //Util::PrintPtr("Uworld: ", LocalPtrs::Gworld);
